@@ -1,0 +1,20 @@
+section#HOME_SERVICES {
+  padding-top: 73.5px;
+}
+section#HOME_SERVICES .container {
+  max-width: 1296px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+section#HOME_SERVICES .container .paragraph-big {
+  margin-top: 0;
+  color: #363534;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Blacker Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 139.152%;
+}

@@ -8,7 +8,7 @@ section#HOME_SERVICES .container {
   padding-right: 35px;
   margin: 0 auto;
 }
-section#HOME_SERVICES .container .paragraph-big {
+section#HOME_SERVICES .container .info .paragraph-big {
   margin: 0;
   color: #363534;
   leading-trim: both;
@@ -19,6 +19,10 @@ section#HOME_SERVICES .container .paragraph-big {
   font-weight: 500;
   line-height: 139.152%;
 }
+section#HOME_SERVICES .container .info .elemnt-right,
+section#HOME_SERVICES .container .info .elemnt-left {
+  display: none;
+}
 section#HOME_SERVICES .container .box-content {
   margin-top: 55px;
   display: flex;
@@ -28,7 +32,7 @@ section#HOME_SERVICES .container .box-content {
 section#HOME_SERVICES .container .box-content .item {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
 }
 section#HOME_SERVICES .container .box-content .item .title-box .title {
   margin: 0;
@@ -97,10 +101,11 @@ section#HOME_SERVICES .container .link span::before {
   border-bottom: 1px solid #363534;
 }
 @media screen and (min-width: 768px) {
-  section#HOME_SERVICES .container .paragraph-big {
+  section#HOME_SERVICES .container .info .paragraph-big {
     font-size: 36px;
   }
   section#HOME_SERVICES .container .box-content {
+    overflow: hidden;
     padding-top: 41px;
     padding-bottom: 30px;
     margin-top: 110px;
@@ -175,5 +180,22 @@ section#HOME_SERVICES .container .link span::before {
   }
   section#HOME_SERVICES .container .link {
     text-align: right;
+  }
+}
+@media screen and (min-width: 1600px) {
+  section#HOME_SERVICES .container .info {
+    position: relative;
+  }
+  section#HOME_SERVICES .container .info .elemnt-left {
+    display: block;
+    position: absolute;
+    left: -173px;
+    bottom: -10px;
+  }
+  section#HOME_SERVICES .container .info .elemnt-right {
+    display: block;
+    position: absolute;
+    right: -105px;
+    top: -34px;
   }
 }

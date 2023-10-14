@@ -7,17 +7,24 @@ section#HOME_SERVICES {
     padding-right: 35px;
     margin: 0 auto;
 
-    .paragraph-big {
-      margin: 0;
-      color: #363534;
-      leading-trim: both;
-      text-edge: cap;
-      font-family: "Blacker Display";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 500;
-      //   !font-weight: 700; si le pongo esto todas la letras se ven bold, y no se ve bien
-      line-height: 139.152%;
+    .info {
+      .paragraph-big {
+        margin: 0;
+        color: #363534;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: "Blacker Display";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        //   !font-weight: 700; si le pongo esto todas la letras se ven bold, y no se ve bien
+        line-height: 139.152%;
+      }
+
+      .elemnt-right,
+      .elemnt-left {
+        display: none;
+      }
     }
 
     .box-content {
@@ -28,7 +35,7 @@ section#HOME_SERVICES {
       .item {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 15px;
         .title-box {
           .title {
             margin: 0;
@@ -109,10 +116,14 @@ section#HOME_SERVICES {
 @media screen and (min-width: 768px) {
   section#HOME_SERVICES {
     .container {
-      .paragraph-big {
-        font-size: 36px;
+      .info {
+        .paragraph-big {
+          font-size: 36px;
+        }
       }
+
       .box-content {
+        overflow: hidden;
         padding-top: 41px;
         padding-bottom: 30px;
         margin-top: 110px;
@@ -200,6 +211,31 @@ section#HOME_SERVICES {
 
       .link {
         text-align: right;
+      }
+    }
+  }
+}
+
+// aqui en esta query meto los elementos que estan en el aire
+@media screen and (min-width: 1600px) {
+  section#HOME_SERVICES {
+    .container {
+      .info {
+        position: relative;
+
+        .elemnt-left {
+          display: block;
+          position: absolute;
+          left: -173px;
+          bottom: -10px;
+        }
+
+        .elemnt-right {
+          display: block;
+          position: absolute;
+          right: -105px;
+          top: -34px;
+        }
       }
     }
   }

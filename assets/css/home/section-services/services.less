@@ -1,24 +1,206 @@
 section#HOME_SERVICES {
   padding-top: 73.5px; // esto es la mitad del padding recuerda
-
+  padding-bottom: 63px; // esto es la mitad del padding recuerda
   .container {
-    max-width: 1296px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 1326px;
+    padding-left: 35px;
+    padding-right: 35px;
     margin: 0 auto;
 
     .paragraph-big {
-      margin-top: 0;
+      margin: 0;
       color: #363534;
       leading-trim: both;
       text-edge: cap;
       font-family: "Blacker Display";
       font-size: 20px;
-      //   font-size: 36px; desktop
       font-style: normal;
       font-weight: 500;
-      //   font-weight: 700; si le pongo esto todas la letras se ven bold, y no se ve bien
+      //   !font-weight: 700; si le pongo esto todas la letras se ven bold, y no se ve bien
       line-height: 139.152%;
+    }
+
+    .box-content {
+      margin-top: 55px;
+      display: flex;
+      flex-direction: column;
+      gap: 36.5px;
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .title-box {
+          .title {
+            margin: 0;
+            color: #363534;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: Blacker Display;
+            font-size: 37px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 126.152%;
+          }
+
+          .info {
+            display: block;
+            color: #363534;
+
+            font-family: "Work Sans";
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 252.166%; /* 252.166% */
+          }
+        }
+
+        .list {
+          margin: 0;
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          .text {
+            color: #363534;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: Work Sans;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 300;
+            // line height para pantallas mas grandes
+            @media screen and (min-width: 1200px) {
+              line-height: 240.191%;
+            }
+          }
+        }
+      }
+    }
+
+    .link {
+      text-align: center;
+      margin-top: 35px;
+      display: block;
+      font-weight: 500;
+      font-size: 15px;
+      font-size: 0.9375rem;
+      color: #363534;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      span {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          bottom: -2.5px;
+          width: 100%;
+          border-bottom: 1px solid #363534;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section#HOME_SERVICES {
+    .container {
+      .paragraph-big {
+        font-size: 36px;
+      }
+      .box-content {
+        padding-top: 41px;
+        padding-bottom: 30px;
+        margin-top: 110px;
+        position: relative;
+        gap: 73px;
+
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 0;
+        }
+
+        &::before {
+          border-bottom: 1px solid #e1e1e1;
+          top: 0;
+        }
+
+        &::after {
+          border-bottom: 1px solid #e1e1e1;
+          bottom: 0;
+        }
+
+        .item {
+          justify-content: space-between;
+          flex-direction: row;
+          .title-box {
+            .title {
+              max-width: 214px;
+            }
+            .info {
+              line-height: unset;
+            }
+          }
+
+          .list {
+            flex-direction: row;
+            height: fit-content;
+            justify-content: end;
+            gap: 0 30px;
+
+            .text {
+              font-size: 20px;
+              position: relative;
+
+              &::after {
+                position: absolute;
+                content: "";
+                border-right: 1px solid #363534;
+                height: 20px;
+                width: 1px;
+                right: -15px;
+                bottom: 50%;
+                transform: translateY(10px);
+              }
+
+              &:last-child::after {
+                content: none;
+              }
+            }
+          }
+        }
+
+        .item:nth-child(2) {
+          position: relative;
+          &::after,
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0;
+          }
+
+          &::after {
+            bottom: -36.5px;
+            border-bottom: 1px solid #e1e1e1;
+          }
+          &::before {
+            top: -36.5px;
+            border-top: 1px solid #e1e1e1;
+          }
+        }
+      }
+
+      .link {
+        text-align: right;
+      }
     }
   }
 }

@@ -1,14 +1,15 @@
 section#HOME_SERVICES {
   padding-top: 73.5px;
+  padding-bottom: 63px;
 }
 section#HOME_SERVICES .container {
-  max-width: 1296px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1326px;
+  padding-left: 35px;
+  padding-right: 35px;
   margin: 0 auto;
 }
 section#HOME_SERVICES .container .paragraph-big {
-  margin-top: 0;
+  margin: 0;
   color: #363534;
   leading-trim: both;
   text-edge: cap;
@@ -17,4 +18,162 @@ section#HOME_SERVICES .container .paragraph-big {
   font-style: normal;
   font-weight: 500;
   line-height: 139.152%;
+}
+section#HOME_SERVICES .container .box-content {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 36.5px;
+}
+section#HOME_SERVICES .container .box-content .item {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+section#HOME_SERVICES .container .box-content .item .title-box .title {
+  margin: 0;
+  color: #363534;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Blacker Display;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 126.152%;
+}
+section#HOME_SERVICES .container .box-content .item .title-box .info {
+  display: block;
+  color: #363534;
+  font-family: "Work Sans";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 252.166%;
+  /* 252.166% */
+}
+section#HOME_SERVICES .container .box-content .item .list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+section#HOME_SERVICES .container .box-content .item .list .text {
+  color: #363534;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Work Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+}
+@media screen and (min-width: 1200px) {
+  section#HOME_SERVICES .container .box-content .item .list .text {
+    line-height: 240.191%;
+  }
+}
+section#HOME_SERVICES .container .link {
+  text-align: center;
+  margin-top: 35px;
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  color: #363534;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+section#HOME_SERVICES .container .link span {
+  position: relative;
+}
+section#HOME_SERVICES .container .link span::before {
+  position: absolute;
+  content: "";
+  bottom: -2.5px;
+  width: 100%;
+  border-bottom: 1px solid #363534;
+}
+@media screen and (min-width: 768px) {
+  section#HOME_SERVICES .container .paragraph-big {
+    font-size: 36px;
+  }
+  section#HOME_SERVICES .container .box-content {
+    padding-top: 41px;
+    padding-bottom: 30px;
+    margin-top: 110px;
+    position: relative;
+    gap: 73px;
+  }
+  section#HOME_SERVICES .container .box-content::after,
+  section#HOME_SERVICES .container .box-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+  }
+  section#HOME_SERVICES .container .box-content::before {
+    border-bottom: 1px solid #e1e1e1;
+    top: 0;
+  }
+  section#HOME_SERVICES .container .box-content::after {
+    border-bottom: 1px solid #e1e1e1;
+    bottom: 0;
+  }
+  section#HOME_SERVICES .container .box-content .item {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  section#HOME_SERVICES .container .box-content .item .title-box .title {
+    max-width: 214px;
+  }
+  section#HOME_SERVICES .container .box-content .item .title-box .info {
+    line-height: unset;
+  }
+  section#HOME_SERVICES .container .box-content .item .list {
+    flex-direction: row;
+    height: fit-content;
+    justify-content: end;
+    gap: 0 30px;
+  }
+  section#HOME_SERVICES .container .box-content .item .list .text {
+    font-size: 20px;
+    position: relative;
+  }
+  section#HOME_SERVICES .container .box-content .item .list .text::after {
+    position: absolute;
+    content: "";
+    border-right: 1px solid #363534;
+    height: 20px;
+    width: 1px;
+    right: -15px;
+    bottom: 50%;
+    transform: translateY(10px);
+  }
+  section#HOME_SERVICES .container .box-content .item .list .text:last-child::after {
+    content: none;
+  }
+  section#HOME_SERVICES .container .box-content .item:nth-child(2) {
+    position: relative;
+  }
+  section#HOME_SERVICES .container .box-content .item:nth-child(2)::after,
+  section#HOME_SERVICES .container .box-content .item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+  }
+  section#HOME_SERVICES .container .box-content .item:nth-child(2)::after {
+    bottom: -36.5px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  section#HOME_SERVICES .container .box-content .item:nth-child(2)::before {
+    top: -36.5px;
+    border-top: 1px solid #e1e1e1;
+  }
+  section#HOME_SERVICES .container .link {
+    text-align: right;
+  }
 }

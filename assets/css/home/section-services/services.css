@@ -40,7 +40,7 @@ section#HOME_SERVICES .container .box-content .item .title-box .title {
   leading-trim: both;
   text-edge: cap;
   font-family: Blacker Display;
-  font-size: 37px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 800;
   line-height: 126.152%;
@@ -133,6 +133,7 @@ section#HOME_SERVICES .container .link span::before {
   }
   section#HOME_SERVICES .container .box-content .item .title-box .title {
     max-width: 214px;
+    font-size: 37px;
   }
   section#HOME_SERVICES .container .box-content .item .title-box .info {
     line-height: unset;

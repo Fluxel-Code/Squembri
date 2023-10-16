@@ -1,0 +1,9 @@
+section#SERVICES_BLOCK_BRANDING {
+  padding-top: 28px;
+}
+section#SERVICES_BLOCK_BRANDING .container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}

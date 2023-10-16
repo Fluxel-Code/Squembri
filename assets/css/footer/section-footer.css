@@ -24,6 +24,9 @@ section#HOME_FOOTER .container .box::before {
   border-top: 1px solid #e1e1e1;
   top: 0;
 }
+section#HOME_FOOTER .container .box .info {
+  max-width: 757px;
+}
 section#HOME_FOOTER .container .box .info .text-info {
   margin: 0;
   color: #363534;
@@ -230,7 +233,7 @@ section#HOME_FOOTER .container .box .c-footer .text-pie > p {
     width: 50%;
   }
   section#HOME_FOOTER .container .box .box-logo {
-    width: 48%;
+    width: 30%;
     justify-content: space-between;
     flex-wrap: nowrap;
     max-width: unset;

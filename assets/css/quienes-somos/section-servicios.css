@@ -1,0 +1,155 @@
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS {
+  padding-top: 42.5px;
+  padding-bottom: 51px;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container {
+  max-width: calc(1320px + 70px);
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .info .min-title {
+  color: #e00034;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 140% */
+  text-transform: uppercase;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .info .paragraph-big {
+  margin-top: 33px;
+  margin-bottom: 0;
+  color: #363534;
+  font-family: "Blacker Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.152%;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list {
+  position: relative;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list::after,
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #e1e1e1;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list::before {
+  top: 0;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list::after {
+  bottom: 0;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #e1e1e1;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item:last-child::after {
+  display: none;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .title {
+  margin: 0;
+  color: #363534;
+  font-family: "Blacker Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 126.152%;
+  /* 50.461px */
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .list .element {
+  color: #363534;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 171.565%;
+  /* 171.565% */
+}
+@media screen and (min-width: 768px) {
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .info .paragraph-big {
+    font-size: 36px;
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list {
+    padding: 50px 0 45px 0;
+    overflow: hidden;
+    gap: 93px;
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 90px;
+    align-items: center;
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item::after {
+    bottom: -46.5px;
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .title {
+    font-size: 37px;
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .list {
+    height: fit-content;
+    justify-content: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 35px;
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .list .element {
+    position: relative;
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .list .element::after {
+    position: absolute;
+    content: "";
+    border-right: 1px solid #363534;
+    width: 0;
+    height: 20px;
+    right: -17.5px;
+    bottom: calc(50% - 10px);
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .list .element:last-child::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box {
+    gap: 84px;
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .title {
+    font-size: 40px;
+  }
+  section#QUIENES_SOMOS_BLOQUE_SERVICIOS .container .box .content-list .item .list .element {
+    font-size: 24px;
+  }
+}

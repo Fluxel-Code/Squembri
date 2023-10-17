@@ -1,0 +1,80 @@
+section#SERVICIOS_EDITORIAL {
+  padding-top: 20.5px;
+  padding-bottom: 30px;
+}
+section#SERVICIOS_EDITORIAL .container {
+  max-width: 1453px;
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+section#SERVICIOS_EDITORIAL .container .box-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 40px;
+}
+section#SERVICIOS_EDITORIAL .container .box-flex .box-img {
+  width: calc(100% + 70px);
+  margin-left: -35px;
+}
+section#SERVICIOS_EDITORIAL .container .box-flex .box-img .image {
+  aspect-ratio: 1.73;
+  width: 100%;
+  margin: 0;
+}
+section#SERVICIOS_EDITORIAL .container .box-flex .box-img .image .img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section#SERVICIOS_EDITORIAL .container .box-flex .box-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media screen and (min-width: 1320px) {
+  section#SERVICIOS_EDITORIAL .container .box-flex .box-info {
+    max-width: 39.1% !important;
+  }
+}
+section#SERVICIOS_EDITORIAL .container .box-flex .box-info .title-black {
+  color: #363534;
+  margin: 0;
+  font-family: "Blacker Display";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+section#SERVICIOS_EDITORIAL .container .box-flex .box-info .paragraph {
+  margin: 0;
+  color: #363534;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 165.652%;
+}
+@media screen and (min-width: 1000px) {
+  section#SERVICIOS_EDITORIAL .container .box-flex {
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section#SERVICIOS_EDITORIAL .container .box-flex .box-img {
+    max-width: 745px;
+    width: 54%;
+    margin-left: 0;
+  }
+  section#SERVICIOS_EDITORIAL .container .box-flex .box-info {
+    max-width: 45%;
+    width: 100%;
+  }
+  section#SERVICIOS_EDITORIAL .container .box-flex .box-info .title-black {
+    font-size: 29px;
+  }
+  section#SERVICIOS_EDITORIAL .container .box-flex .box-info .paragraph {
+    font-size: 18px;
+  }
+}

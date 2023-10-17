@@ -65,7 +65,10 @@ section#HOME_FOOTER .container .box .location {
 section#HOME_FOOTER .container .box .location .info-location {
   width: 100%;
 }
-section#HOME_FOOTER .container .box .location .info-location > h5 {
+section#HOME_FOOTER .container .box .location .info-location > .location-text {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
   margin: 0;
   color: #363534;
   font-family: "Work Sans";
@@ -201,6 +204,9 @@ section#HOME_FOOTER .container .box .c-footer .text-pie > p {
   section#HOME_FOOTER .container .box .location .info-location {
     width: 45%;
   }
+  section#HOME_FOOTER .container .box .location .info-location .contact {
+    margin-top: 11px;
+  }
   section#HOME_FOOTER .container .box .box-logo {
     justify-content: space-between;
     gap: 32px;
@@ -220,7 +226,7 @@ section#HOME_FOOTER .container .box .c-footer .text-pie > p {
 @media screen and (min-width: 1300px) {
   section#HOME_FOOTER .container .box {
     flex-direction: row;
-    gap: 50px;
+    gap: 25.42px 50px;
     justify-content: space-between;
   }
   section#HOME_FOOTER .container .box .info {
@@ -233,13 +239,13 @@ section#HOME_FOOTER .container .box .c-footer .text-pie > p {
     width: 50%;
   }
   section#HOME_FOOTER .container .box .box-logo {
+    max-width: 350px;
+    margin: 45.58px 0 0 0;
     width: 30%;
     justify-content: space-between;
     flex-wrap: nowrap;
-    max-width: unset;
     min-height: unset;
-    margin: 0;
-    gap: 28px;
+    gap: 0;
   }
   section#HOME_FOOTER .container .box .box-logo .item {
     margin: 0;
@@ -249,6 +255,7 @@ section#HOME_FOOTER .container .box .c-footer .text-pie > p {
     width: 100%;
   }
   section#HOME_FOOTER .container .box .social-media {
+    margin-top: 45.58px;
     width: 48%;
     justify-content: end;
     align-items: end;
@@ -275,16 +282,20 @@ section#HOME_FOOTER .container .box .c-footer .text-pie > p {
     content: "";
     position: absolute;
     right: -9px;
-    bottom: calc(50% - 5px);
+    bottom: calc(50% - 7px);
     border-right: 1px solid #363534;
-    height: 10px;
+    height: 12px;
+  }
+  section#HOME_FOOTER .container .box .c-footer .info-legal > li:last-child::after {
+    display: none;
   }
   section#HOME_FOOTER .container .box .c-footer .info-legal > li a {
     font-size: 10px;
   }
   section#HOME_FOOTER .container .box .c-footer .text-pie {
     width: 50%;
-    margin: 0;
+    margin-top: -12.42px;
+    margin-bottom: 0;
   }
   section#HOME_FOOTER .container .box .c-footer .text-pie > p {
     text-align: end;

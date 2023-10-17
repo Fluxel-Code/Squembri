@@ -64,7 +64,10 @@ section#HOME_FOOTER {
         gap: 25px;
         .info-location {
           width: 100%;
-          & > h5 {
+          & > .location-text {
+            text-decoration: none;
+            cursor: pointer;
+            display: block;
             margin: 0;
             color: #363534;
             font-family: "Work Sans";
@@ -218,6 +221,10 @@ section#HOME_FOOTER {
           flex-direction: row;
           .info-location {
             width: 45%;
+
+            .contact {
+              margin-top: 11px;
+            }
           }
         }
 
@@ -253,7 +260,7 @@ section#HOME_FOOTER {
     .container {
       .box {
         flex-direction: row;
-        gap: 50px;
+        gap: 25.42px 50px;
         justify-content: space-between;
 
         .info {
@@ -268,13 +275,13 @@ section#HOME_FOOTER {
         }
 
         .box-logo {
+          max-width: 350px;
+          margin: 45.58px 0 0 0;
           width: 30%;
           justify-content: space-between;
           flex-wrap: nowrap;
-          max-width: unset;
           min-height: unset;
-          margin: 0;
-          gap: 28px;
+          gap: 0;
           .item {
             margin: 0;
             width: 30%;
@@ -285,6 +292,7 @@ section#HOME_FOOTER {
         }
 
         .social-media {
+          margin-top: 45.58px;
           width: 48%;
           justify-content: end;
           align-items: end;
@@ -310,9 +318,15 @@ section#HOME_FOOTER {
                 content: "";
                 position: absolute;
                 right: -9px;
-                bottom: calc(50% - 5px);
+                bottom: calc(50% - 7px);
                 border-right: 1px solid #363534;
-                height: 10px;
+                height: 12px;
+              }
+
+              &:last-child {
+                &::after {
+                  display: none;
+                }
               }
 
               a {
@@ -323,7 +337,8 @@ section#HOME_FOOTER {
 
           .text-pie {
             width: 50%;
-            margin: 0;
+            margin-top: -12.42px;
+            margin-bottom: 0;
             & > p {
               text-align: end;
             }
